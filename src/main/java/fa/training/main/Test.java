@@ -60,7 +60,7 @@ public class Test {
                     System.out.println("Invalid choice. Please choose from 1 to 5.");
             }
 
-            System.out.println(); 
+            System.out.println(); // blank line for readability
         } while (choice != 5);
 
         scanner.close();
