@@ -51,20 +51,9 @@ public class Customer {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("Customer Name: ").append(name).append("\n")
-        .append("Phone Number: ").append(phoneNumber).append("\n")
-        .append("Address: ").append(address).append("\n")
-        .append("Orders:\n");
-
-        if (orders != null && !orders.isEmpty()) {
-            for (Order order : orders) {
-                sb.append("\t").append(order.toString()).append("\n");
-            }
-        } else {
-            sb.append("\tNo orders.\n");
-        }
-
-        return sb.toString();
+        return "Customer{name=" + name +
+            ", phone=" + phoneNumber +
+            ", address = " + address +
+            ", Order[]}";
     }
 }
